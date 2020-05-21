@@ -16,6 +16,9 @@
 		6626D9802468E7B700E3B198 /* swift__UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6626D97F2468E7B700E3B198 /* swift__UITests.swift */; };
 		66511C2C247271AF00423DCC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66511C2B247271AF00423DCC /* Person.swift */; };
 		66511C2E2472773600423DCC /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66511C2D2472773600423DCC /* Student.swift */; };
+		667BD41A24765C5E00CC1DCD /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BD41924765C5E00CC1DCD /* WeatherInfo.swift */; };
+		667BD41D247669A100CC1DCD /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BD41C247669A100CC1DCD /* OperationViewController.swift */; };
+		66A920872474D80C00738D3B /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A920862474D80C00738D3B /* WeatherController.swift */; };
 		66C59CAA2473757A00F93172 /* PersonKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C59CA92473757A00F93172 /* PersonKVC.swift */; };
 		66C59CAC2473AB2300F93172 /* StudentKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C59CAB2473AB2300F93172 /* StudentKVC.swift */; };
 		66C59CAF2473AC0100F93172 /* PersonBianli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C59CAE2473AC0100F93172 /* PersonBianli.swift */; };
@@ -50,6 +53,9 @@
 		6626D9812468E7B700E3B198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66511C2B247271AF00423DCC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		66511C2D2472773600423DCC /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		667BD41924765C5E00CC1DCD /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		667BD41C247669A100CC1DCD /* OperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
+		66A920862474D80C00738D3B /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
 		66C59CA92473757A00F93172 /* PersonKVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonKVC.swift; sourceTree = "<group>"; };
 		66C59CAB2473AB2300F93172 /* StudentKVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentKVC.swift; sourceTree = "<group>"; };
 		66C59CAE2473AC0100F93172 /* PersonBianli.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBianli.swift; sourceTree = "<group>"; };
@@ -99,6 +105,8 @@
 		6626D9672468E7B600E3B198 /* swift学习 */ = {
 			isa = PBXGroup;
 			children = (
+				667BD41B2476697B00CC1DCD /* 多线程 */,
+				66A920852474D7EF00738D3B /* json反序列化 */,
 				66C59CB72473B34F00F93172 /* 懒加载 */,
 				66511C2A2472719700423DCC /* 构造函数 */,
 				6626D9682468E7B600E3B198 /* AppDelegate.swift */,
@@ -130,6 +138,23 @@
 				66C59CA72473736D00F93172 /* 重写重载 */,
 			);
 			path = "构造函数";
+			sourceTree = "<group>";
+		};
+		667BD41B2476697B00CC1DCD /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				667BD41C247669A100CC1DCD /* OperationViewController.swift */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		66A920852474D7EF00738D3B /* json反序列化 */ = {
+			isa = PBXGroup;
+			children = (
+				66A920862474D80C00738D3B /* WeatherController.swift */,
+				667BD41924765C5E00CC1DCD /* WeatherInfo.swift */,
+			);
+			path = "json反序列化";
 			sourceTree = "<group>";
 		};
 		66C59CA72473736D00F93172 /* 重写重载 */ = {
@@ -286,10 +311,13 @@
 				6626D9692468E7B600E3B198 /* AppDelegate.swift in Sources */,
 				66C59CAF2473AC0100F93172 /* PersonBianli.swift in Sources */,
 				66511C2C247271AF00423DCC /* Person.swift in Sources */,
+				667BD41D247669A100CC1DCD /* OperationViewController.swift in Sources */,
+				667BD41A24765C5E00CC1DCD /* WeatherInfo.swift in Sources */,
 				66C59CAA2473757A00F93172 /* PersonKVC.swift in Sources */,
 				66511C2E2472773600423DCC /* Student.swift in Sources */,
 				66C59CB42473B0B200F93172 /* PersonXigou.swift in Sources */,
 				66C59CB12473AF5000F93172 /* StudentBianli.swift in Sources */,
+				66A920872474D80C00738D3B /* WeatherController.swift in Sources */,
 				6626D96B2468E7B600E3B198 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lyy.swift--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hjy.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,7 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lyy.swift--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hjy.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,5 +1,9 @@
 import UIKit
 
+
+var welcomeMsg:String
+welcomeMsg = "hello"
+
 /**
  常量 变量
  常量用 let 一旦设置数值不可更改

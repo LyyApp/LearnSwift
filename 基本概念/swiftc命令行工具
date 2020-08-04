@@ -1,0 +1,3 @@
+1、oc和swift编译过程
+	C/OC---------Clang---------LLVMIR----LLVM compiler----x86/ARM
+	swift---swift AST---swift---Swift IL----LLVMIR---LLVM compiler---X86/ARM 
